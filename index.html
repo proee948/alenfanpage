@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alan Stojic Fanpage</title>
+  <link rel="stylesheet" href="css.css" />
+  <script>
+    let currentAudio = null;
+    function playAudio(id) {
+      const audio = document.getElementById(id);
+      if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+      audio.play();
+      currentAudio = audio;
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <h1>Alan Stojic Fanpage</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#music">Ragebait</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <img src="gojo.jpg.jpg" alt="Gojo" class="hero-img" />
+    <p>Dobrodošli u Yutin Fanpage – Rage with Style</p>
+    <select>
+      <option>mogli smo</option>
+      <option>moram u mostar</option>
+      <option>berem sipke</option>
+      <option>copy/paste</option>
+      <option>reinforcement behavior</option>
+      <option>always against me</option>
+	  <option>world against me</option>
+	  <option>born to oppose me</option>
+		
+    </select>
+  </section>
+
+  <video class="bg-video" width="375" autoplay loop muted playsinline>
+    <source src="alen.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>
+  <video class="bg-video" width="375" autoplay loop muted playsinline>
+    <source src="alen.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video class="bg-video" width="375" autoplay loop muted playsinline>
+    <source src="alen.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video class="bg-video" width="375" autoplay loop muted playsinline>
+    <source src="alen.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <video class="bg-video" width="375" autoplay loop muted playsinline>
+    <source src="alen.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+
+  <section class="audio-section" id="music">
+    <h2>Top Ragebaits</h2>
+    <ul>
+      <li><strong>Faded</strong> <button onclick="playAudio('faded')">▶️</button></li>
+      <li><strong>Diamonds</strong> <button onclick="playAudio('diamonds')">▶️</button></li>
+      <li><strong>Spectre</strong> <button onclick="playAudio('spectre')">▶️</button></li>
+      <li><strong>Stereo Love</strong> <button onclick="playAudio('stereo_love')">▶️</button></li>
+      <li><strong>Hall of Fame</strong> <button onclick="playAudio('hall_of_fame')">▶️</button></li>
+      <li><strong>Reset</strong> <button onclick="playAudio('NISTA')">▶️</button></li>
+    </ul>
+
+    <audio id="faded" src="faded.mp3"></audio>
+    <audio id="diamonds" src="diamonds.mp3"></audio>
+    <audio id="spectre" src="spectre.mp3"></audio>
+    <audio id="stereo_love" src="stereo.mp3"></audio>
+    <audio id="hall_of_fame" src="fame.mp3"></audio>
+    <audio id="NISTA" src=""></audio>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="slika2.jpg" alt="2" />
+      <img src="slika3.jpg" alt="3" />
+      <img src="slika4.jpg" alt="4" />
+      <img src="slika5.jpg" alt="5" />
+      <img src="slika6.jpg" alt="6" />
+      <img src="slika7.jpg" alt="7" />
+      <img src="slika8.jpg" alt="8" />
+      <img src="slika9.jpg" alt="9" />
+      <img src="slika10.jpg" alt="10" />
+      <img src="slika11.jpg" alt="11" />
+    </div>
+  </section>
+
+  <section id="location" class="map-section">
+    <h2>Fan Gathering Spot</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d363.39468976301794!2d17.69568881595406!3d43.22715698855139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shr!2sba!4v1740250181459!5m2!1shr!2sba"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  
+	<!-- Footer Section -->
+<footer style="background-color: #333; color: white; padding: 20px 0; text-align: center; margin-top: 40px;">
+    <p>&copy; 2025 Alan Stojic Fanpage. All rights reserved.</p>
+    <p>Follow us on social media: 
+        <a href="https://twitter.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">Twitter</a> | 
+        <a href="https://facebook.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">Facebook</a> |
+        <a href="https://instagram.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">Instagram</a>
+    </p>
+    <p>Contact: <a href="mailto:info@alanstojicfanpage.com" style="color: white;">info@alanstojicfanpage.com</a></p>
+</footer>
+
+</body>
+</html>
