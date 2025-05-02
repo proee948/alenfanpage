@@ -1,0 +1,43 @@
+button{ 
+    color: red;
+	background-color: yellow;
+	padding: 2px 20px;
+	border-radius: 50px; 
+
+}
+button:hover {
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+h1{
+	background-color: black;
+	border-radius: 50px;
+	padding: 2px 20px;
+	
+}
+h1:hover {
+	cursor: help;
+	transform: scale(1.5);
+}
+img{
+	border-radius: 50px;
+}
+img:hover{
+	transform: scale(1.5);
+}
+iframe{
+	border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+	
+	
